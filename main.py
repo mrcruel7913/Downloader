@@ -9,7 +9,7 @@ import os
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
-bot = telebot.TeleBot('242486406:AAHQlnZqVv0N6DllprVp0SlqqalhPZ7zrFc')
+bot = telebot.TeleBot('262833514:AAGWhrpuSK0Ze2HXdrlW7Sdmcgc3Cm5NJ0Q')
 admin = 208094932
 botusername = 'picdownloaderbot'
 
@@ -23,21 +23,21 @@ def n(m):
     if re.match('^/(help|start)$',text):
         bot.send_message(m.chat.id, """
 <code>سلام خوش آمدید به ربات picdownloader
-______________________________________________
+________________________________
 
 راهنمای استفاده:
 ابتدا ادرس url فایل خودرابفرستید وسپس کمی صبرکنید تا ربات آن رابرای شما ارسال کند 
 
 *نکت فقط فایل هایی بافرمت png | jpg | zip قابل دریافت هستند.
-______________________________________________
+________________________________
 
  نمایش آیدی عددی خود
 /id
-______________________________________________
-
+________________________________
 باتشکر 
 
-سازنده :XxattackerxX@</code>
+سازنده :
+XxattackerxX@</code>
         """,parse_mode='HTML')
     if m.chat.type == 'private':
         if re.match('(ftp|http)://.*\.(png)$',text):
