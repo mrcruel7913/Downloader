@@ -9,7 +9,7 @@ import os
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
-bot = telebot.TeleBot('262833514:AAGWhrpuSK0Ze2HXdrlW7Sdmcgc3Cm5NJ0Q')
+bot = telebot.TeleBot('26(lW7Sdmcgc3Cm5NJ0Q')
 admin = 208094932
 botusername = 'picdownloaderbot'
 
