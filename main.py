@@ -22,9 +22,14 @@ def n(m):
         bot.send_message(m.chat.id, m.from_user.id)
     if re.match('^/(help|start)$',text):
         bot.send_message(m.chat.id, """
-1> /id
-2> <code>send url png|jpg|zip</code>
-3> #Soon
+سلام خوش آمدید 
+1:/id نمایش آیدی خود
+
+2:برای دریافت فایل یاعکس خود لینک فایل خودرابفرستید
+فقط فرمت png.jpg.zipقابل قبول است
+وبعدکمی صبرکنید تافایل موردنظرشماارسال شود
+باتشکر
+سازنده:@XxattackerxX
         """,parse_mode='HTML')
     if m.chat.type == 'private':
         if re.match('(ftp|http)://.*\.(png)$',text):
