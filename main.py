@@ -22,18 +22,26 @@ def n(m):
         bot.send_message(m.chat.id, m.from_user.id)
     if re.match('^/(help|start)$',text):
         bot.send_message(m.chat.id, """
-سلام خوش آمدید 
-1:/id نمایش آیدی خود
+<code>سلام خوش آمدید به ربات picdownloader
+______________________________________________
 
-2:برای دریافت فایل یاعکس خود لینک فایل خودرابفرستید
-فقط فرمت png.jpg.zipقابل قبول است
-وبعدکمی صبرکنید تافایل موردنظرشماارسال شود
-باتشکر
-سازنده:@XxattackerxX
+راهنمای استفاده:
+ابتدا ادرس url فایل خودرابفرستید وسپس کمی صبرکنید تا ربات آن رابرای شما ارسال کند 
+
+*نکت فقط فایل هایی بافرمت png | jpg | zip قابل دریافت هستند.
+______________________________________________
+
+ نمایش آیدی عددی خود
+/id
+______________________________________________
+
+باتشکر 
+
+سازنده :XxattackerxX@</code>
         """,parse_mode='HTML')
     if m.chat.type == 'private':
         if re.match('(ftp|http)://.*\.(png)$',text):
-            bot.send_message(m.chat.id, 'ok wait')
+            bot.send_message(m.chat.id, 'لطفا کمی صبرکنید')
             dw(text,'s.png')
             bot.send_photo(m.chat.id, open('s.png'))
             os.remove('s.png') 
